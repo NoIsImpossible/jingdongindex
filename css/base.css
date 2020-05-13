@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/*css 初始化 */
+blockquote,body,a,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
+	margin: 0;
+	padding: 0;
+}
+*{
+    border: 0;
+    outline: none;
+}
+body {
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+ul {
+    list-style: none;
+}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1190px;
+    margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+.f10 {
+    color: #f10215;
+}
+a:hover {
+    color: #c81623;
+}
+/* 图标字体声明 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+  }
+
+/* 定义使用字体图标 */
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+/*头部导航开始*/
+
+header {
+    height: 80px;
+    background-color: #3276b7;
+}
+.shortcut {
+    background-color: #e3e4e5;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    color: #999;
+    line-height: 30px;
+}
+.city {
+    margin-left: 200px;
+}
+.shortcut .fr li {
+    float: left;
+}
+/* 竖线制作 */
+.space {
+    background: #ccc;
+    height: 10px;
+    width: 1px;
+    line-height: 30;
+    margin: 10px 13px 0;
+}
+/* 下拉箭头 */
+.shortcut span {
+    font-size: 8px;
+    color: #ccc;
+    width: 12px;
+    height: 12px;
+}
+.shortcut .fr {
+    padding-right: 13px;
+}
+.shortcut .city span {
+    color: #f10215;
+    font-size: 16px;
+}
+.mobile {
+    position: relative;
+}
+.mobile img {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+
+
+/* 中间主要搜索内容区域 */
+.middle-search {
+    height: 140px;
+    /* background: #c81623; */
+    position: relative;
+}
+.middle-search .logo {
+    background: #fff url(../image/logo.png) no-repeat;
+    height: 170px;
+    width: 190px;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.3);
+}
+.form {
+    width: 550px;
+    height: 35px;
+    /* background-color: #ccc; */
+    position: absolute;
+    top: 25px;
+    left: 320px;
+
+}
+/* 主要内容展示区域 */
+.main-content {
+    height: 500px;
+    background-color: #ccc;
+}
+.form input {
+    height: 33px;
+    width: 498px;
+    /* background-color: #c99; */
+    border: 1px solid #f10215;
+    float: left;
+    text-indent: 1em;
+}
+.form button {
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    float: left;
+}
+.form span {
+    font-style: normal;
+    color: #fff;
+}
+.shopCar {
+    width: 188px;
+    height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 25px;
+    left: 900px;
+    background-color: #fff;
+    color: #f10215;
+    line-height: 33px;
+    text-align: center;
+    font-size: 14px;
+    
+}
+.shopCar .count {
+    width: 15px;
+    height: 18px;
+    background-color: #f10215;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    line-height: 18px;
+    color: #fff;
+}
+.hotWords {
+    position: absolute;
+    top: 68px;
+    left: 320px;
+}
+.listNav {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    /* background-color: red; */
+    height: 40px;
+    width: 770px;
+    line-height: 40px;
+}
+.listNav li {
+    float: left;
+    /* margin-left: 23px; */
+}
+.listNav li {
+    font-size: 15px;
+    font-weight: 700;
+    color: #555;
+    margin: 0 11px;
+}
+.listNav li a:hover{
+    color: #f10215;
+}
+.superDay {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+
+/* 页面底部区域 */
+footer {
+    height: 500px;
+    background-color: #eaeaea;
+    margin-top: 35px;
+}
+.service {
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+
+}
+
+
+
+
+
+
+
+
