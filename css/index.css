@@ -1,0 +1,83 @@
+/* 主要内容展示区域 */
+.main-content {
+    height: 500px;
+    background-color: #f4f4f4;
+}
+.main-content {
+    height: 480px;
+    /* border: 1px solid #000; */
+}
+.grid1,
+.grid2,
+.grid3 {
+    margin-top: 10px;
+    height: 470px;
+}
+.grid1 {
+    width: 189px;
+    background-color: #fefefe;
+}
+.grid1 li {
+    font-size: 14px;
+    color: #666;
+    padding: 3px 18px 0;
+    line-height: 26px;
+}
+.grid1 li:hover {
+    background: #a39393;
+}
+.grid1 li a {
+    color:#333333;
+}
+.grid1 li a:hover{
+    color: #f10215;
+}
+/* banner */
+.grid2 {
+    width: 975px;
+    /* background: #db0a0a; */
+    padding: 0 10px;
+}
+.bannerMiddle {
+    position: relative;
+}
+.bannerMiddle .item {
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 220px;
+}
+.bannerMiddle .arrow-l {
+    left: 0;
+}
+.bannerMiddle .arrow-r {
+    right: 0;
+}
+.little-cicle {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.little-cicle li {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    /* float: left; */
+    border-radius: 50%;
+
+    /* vertical-align: middle; */
+}
+
+
+
+
+.bannerMiddle img {
+    height: 470px;
+    width: 775px;
+}
+.adMddlie img {
+    display: block;
+}
+.adMddlie .middle img {
+    padding: 10px 0;
+}

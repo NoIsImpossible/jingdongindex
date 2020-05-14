@@ -157,11 +157,7 @@ header {
     left: 320px;
 
 }
-/* 主要内容展示区域 */
-.main-content {
-    height: 500px;
-    background-color: #ccc;
-}
+
 .form input {
     height: 33px;
     width: 498px;
